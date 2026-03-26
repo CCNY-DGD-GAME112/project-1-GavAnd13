@@ -53,9 +53,9 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < autoclick; i++)
         {
+            o2Particle.Play();
             AddO2(clickMult);
         }
-        //I know i could do AddO2(clickMult * autoclick) and it would be objectively better, but this feels more true to what I want the mechanic to be. It actually simulates the clicking.;
         AddO2(passive);
         O2Update();
     }
